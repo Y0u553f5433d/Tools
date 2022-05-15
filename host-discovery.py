@@ -12,7 +12,7 @@ for i in network.hosts():
     response = os.system("ping %s -c 1 > /dev/null" %i)
 
     if response == 0:
-                print("%s is UP" %i)
+                print("Host %s is UP" %i)
     else:
                 pass
 
