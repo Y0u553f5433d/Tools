@@ -4,8 +4,8 @@ import ipaddress
 import os
 
 
-network = ipaddress.ip_network(unicode("10.11.1.0/24"))
-print("Python Host Discovery on 10.11.1.0/24")
+network = ipaddress.ip_network(unicode("*Network-ID*/*mask*"))
+print("Python Host Discovery on *Network-ID*/*mask*")
 
 for i in network.hosts():
     
