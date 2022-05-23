@@ -5,7 +5,7 @@ def log_reader(file):
         for line in fd:
             if re.match("(.*)\.js", line):
                 yield line.split()[6].split('/')[2]
-my_reader = log_reader('access_log.txt')
+my_reader = log_reader('*FILE*.txt')
 paths = set(my_reader) # unique elements
 sortt=sorted(paths)
 for row in sortt:
