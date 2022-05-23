@@ -19,4 +19,4 @@ def dns_zone_xfer(address):
                 print("[] NS {} refused zone transfer!".format(server))
                 continue
 
-dns_zone_xfer('megacorpone.com')
+dns_zone_xfer('*DOMAIN*')
