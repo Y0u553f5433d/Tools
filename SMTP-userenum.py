@@ -10,7 +10,7 @@ if len(sys.argv) != 2:
 users=open(sys.argv[1]).read().splitlines()
 for user in users:
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    connect = s.connect(('10.11.1.217',25))
+    connect = s.connect(('*IP*',25))
     banner = s.recv(1024)
     #print (banner)
     s.send('VRFY ' + user + '\r\n')
